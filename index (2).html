@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="instagram downloader, reels downloader, instagram video download, save instagram reels, download instagram photos, igtv downloader, story saver" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://onetapdownloader.com/" />
+<meta property="og:image" content="https://onetapdownloader.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="One Tap Downloader - Instagram Video & Reels Downloader" />
+<meta name="twitter:description" content="Download Instagram Videos, Reels, Photos, IGTV & Albums in one tap. Free, fast, no login required." />
+<link rel="canonical" href="https://onetapdownloader.com/" />
+<meta name="description" content="One Tap Downloader - Download Instagram Videos, Reels, Photos, IGTV & Albums in one tap. Fast, free, no login required." />
+<meta property="og:title" content="One Tap Downloader - Instagram Video & Photo Downloader" />
+<meta property="og:description" content="Download Instagram Videos, Reels, Photos, IGTV & Albums in one tap." />
+<meta name="theme-color" content="#7C3AED" />
+<title>One Tap Downloader - Instagram Video, Reels & Photo Downloader</title>
+
+<!-- Google AdSense - Replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --primary: #7C3AED;
+    --primary-dark: #5B21B6;
+    --primary-light: #EDE9FE;
+    --accent: #F59E0B;
+    --text: #1E1B4B;
+    --text-muted: #6B7280;
+    --bg: #FAFAFA;
+    --card: #FFFFFF;
+    --border: #E5E7EB;
+    --radius: 14px;
+    --shadow: 0 4px 24px rgba(124,58,237,0.08);
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 1.5rem;
+  }
+  .nav-inner {
+    max-width: 900px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px; gap: 1rem;
+  }
+  .logo {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700; font-size: 1.2rem;
+    color: var(--primary); text-decoration: none;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .logo svg { width: 28px; height: 28px; }
+  .nav-tabs {
+    display: flex; gap: 4px; flex-wrap: wrap;
+  }
+  .nav-tab {
+    padding: 6px 14px; border-radius: 8px;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-muted); cursor: pointer;
+    border: none; background: none;
+    transition: all 0.15s;
+    text-decoration: none;
+  }
+  .nav-tab:hover, .nav-tab.active {
+    background: var(--primary-light);
+    color: var(--primary);
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%);
+    padding: 3.5rem 1.5rem 4rem;
+    text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+  }
+  .hero-inner { position: relative; max-width: 700px; margin: 0 auto; }
+  .hero h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    font-weight: 700; color: #fff;
+    line-height: 1.2; margin-bottom: 0.75rem;
+  }
+  .hero p {
+    color: rgba(255,255,255,0.8);
+    font-size: 1rem; margin-bottom: 2rem;
+  }
+
+  /* DOWNLOADER BOX */
+  .dl-box {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+    display: flex; gap: 10px; align-items: center;
+  }
+  .dl-input {
+    flex: 1;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .dl-input:focus { border-color: var(--primary); }
+  .dl-input::placeholder { color: #9CA3AF; }
+
+  .btn-primary {
+    background: var(--primary);
+    color: #fff; border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px; cursor: pointer;
+    font-size: 0.95rem; font-weight: 600;
+    font-family: 'Sora', sans-serif;
+    transition: background 0.15s, transform 0.1s;
+    white-space: nowrap;
+  }
+  .btn-primary:hover { background: var(--primary-dark); }
+  .btn-primary:active { transform: scale(0.97); }
+
+  .btn-clear {
+    background: #F3F4F6; color: var(--text-muted);
+    border: none; padding: 0.75rem 1rem;
+    border-radius: 10px; cursor: pointer;
+    font-size: 0.85rem; font-family: 'Inter', sans-serif;
+    transition: background 0.15s;
+  }
+  .btn-clear:hover { background: #E5E7EB; }
+
+  /* AD BANNER TOP */
+  .ad-banner {
+    max-width: 900px; margin: 1.5rem auto;
+    padding: 0 1.5rem;
+  }
+  .ad-slot {
+    background: #F3F4F6;
+    border: 1px dashed #D1D5DB;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    color: #9CA3AF; font-size: 12px;
+    min-height: 90px;
+    text-align: center;
+  }
+  .ad-slot.tall { min-height: 250px; }
+
+  /* RESULT SECTION */
+  /* RESULT SECTION */
+  .result-section {
+    max-width: 420px; margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* 9:16 Reel Preview Card */
+  .reel-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    box-shadow: 0 8px 40px rgba(124,58,237,0.13);
+  }
+  .reel-preview {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    background: #111;
+    overflow: hidden;
+  }
+  .reel-preview img,
+  .reel-preview video {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+  }
+  .reel-preview video { background: #000; }
+  .dl-progress {
+    display: none; margin-top: 0.5rem;
+    font-size: 0.8rem; color: var(--primary); text-align: center;
+  }
+  .btn-dl.loading-dl {
+    background: #6B7280; cursor: not-allowed;
+  }
+  .reel-info {
+    padding: 1rem 1.25rem 1.25rem;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  }
+  .reel-info-text h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
+  .reel-info-text p { font-size: 0.8rem; color: var(--text-muted); }
+  .btn-dl {
+    background: #10B981; color: #fff;
+    border: none; padding: 0.7rem 1.4rem;
+    border-radius: 10px; cursor: pointer;
+    font-size: 0.9rem; font-weight: 600;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: background 0.15s; white-space: nowrap; flex-shrink: 0;
+  }
+  .btn-dl:hover { background: #059669; }
+
+  /* Empty placeholder before search */
+  .reel-placeholder {
+    max-width: 420px; margin: 1.5rem auto 0; padding: 0 1.5rem;
+  }
+  .reel-placeholder-inner {
+    width: 100%; aspect-ratio: 9 / 16;
+    background: #F3F4F6; border: 2px dashed #D1D5DB;
+    border-radius: 20px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0.75rem; color: #9CA3AF;
+  }
+  .reel-placeholder-inner p { font-size: 1.1rem; font-weight: 600; text-align: center; line-height: 1.5; padding: 0 1rem; color: #7C3AED; letter-spacing: 0.3px; }
+
+
+  /* MAIN CONTENT */
+  .main { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+
+  /* HOW TO */
+  .section-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.35rem; font-weight: 700;
+    color: var(--text); margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem; margin-bottom: 3rem;
+  }
+  .step-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .step-num {
+    width: 40px; height: 40px;
+    background: var(--primary-light);
+    color: var(--primary); font-weight: 700;
+    border-radius: 50%; display: flex;
+    align-items: center; justify-content: center;
+    margin: 0 auto 0.85rem; font-size: 1.1rem;
+    font-family: 'Sora', sans-serif;
+  }
+  .step-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.4rem; }
+  .step-card p { font-size: 0.82rem; color: var(--text-muted); }
+
+  /* FEATURES */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem; margin-bottom: 3rem;
+  }
+  .feat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem; box-shadow: var(--shadow);
+  }
+  .feat-icon {
+    font-size: 1.5rem; margin-bottom: 0.6rem;
+  }
+  .feat-card h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .feat-card p { font-size: 0.8rem; color: var(--text-muted); }
+
+  /* FAQ */
+  .faq-list { margin-bottom: 3rem; }
+  .faq-item {
+    border-bottom: 1px solid var(--border); padding: 1.1rem 0;
+  }
+  .faq-q {
+    font-weight: 600; font-size: 0.95rem;
+    cursor: pointer; display: flex;
+    justify-content: space-between; align-items: center;
+    gap: 1rem; user-select: none;
+  }
+  .faq-q span.arrow { transition: transform 0.2s; font-size: 1rem; }
+  .faq-a {
+    font-size: 0.85rem; color: var(--text-muted);
+    margin-top: 0.6rem; display: none;
+    line-height: 1.7;
+  }
+  .faq-item.open .faq-a { display: block; }
+  .faq-item.open .arrow { transform: rotate(180deg); }
+
+  /* FOOTER */
+  footer {
+    background: var(--text);
+    color: rgba(255,255,255,0.7);
+    padding: 2.5rem 1.5rem;
+    text-align: center; font-size: 0.82rem;
+  }
+  .footer-inner { max-width: 900px; margin: 0 auto; }
+  .footer-links {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 1rem; margin-bottom: 1.25rem;
+  }
+  .footer-links a {
+    color: rgba(255,255,255,0.7); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .footer-links a:hover { color: #fff; }
+  .footer-copy { color: rgba(255,255,255,0.4); }
+
+  /* LOADING */
+  .loading {
+    display: none; text-align: center;
+    padding: 2rem; color: var(--primary);
+  }
+  .spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--primary-light);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 0.75rem;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .error-msg {
+    background: #FEE2E2; color: #991B1B;
+    border-radius: 10px; padding: 1rem 1.25rem;
+    margin: 1rem 0; display: none; font-size: 0.88rem;
+  }
+
+  @media (max-width: 600px) {
+    .dl-box { flex-wrap: wrap; }
+    .dl-input { width: 100%; }
+    .btn-primary { flex: 1; }
+    .nav-tabs { display: none; }
+  }
+</style>
+</head>
+<body id="top">
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="#">
+      <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="28" height="28" rx="8" fill="#7C3AED"/>
+        <path d="M14 7v10M9 13l5 5 5-5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7 20h14" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      One Tap Downloader
+    </a>
+    <div class="nav-tabs">
+      <a class="nav-tab active" href="#">Video</a>
+      <a class="nav-tab" href="#">Photo</a>
+      <a class="nav-tab" href="#">Reels</a>
+      <a class="nav-tab" href="#">Story</a>
+      <a class="nav-tab" href="#">IGTV</a>
+      <a class="nav-tab" href="#">Carousel</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Instagram Downloader</h1>
+    <p>Download Instagram Videos, Reels, Photos, IGTV & Albums — free, fast, no login needed.</p>
+    <div class="dl-box">
+      <input class="dl-input" id="urlInput" type="text" placeholder="Paste Instagram link here..." />
+      <button class="btn-clear" onclick="clearInput()">Clear</button>
+      <button class="btn-primary" onclick="startDownload()">⬇ Download</button>
+    </div>
+  </div>
+</section>
+
+<!-- AD BANNER (Top) -->
+<div class="ad-banner">
+  <!-- AdSense: Replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID & add data-ad-slot -->
+  <ins class="adsbygoogle ad-slot"
+    style="display:block"
+    data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+    data-ad-slot="XXXXXXXXXX"
+  <ins class="adsbygoogle ad-slot"
+    style="display:block"
+    data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+    data-ad-slot="XXXXXXXXXX"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- RESULT SECTION -->
+
+<!-- REEL PLACEHOLDER (shown before download) -->
+<div class="reel-placeholder" id="reelPlaceholder">
+  <div class="reel-placeholder-inner">
+    <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="#C4B5FD" stroke-width="1.2">
+      <rect x="2" y="3" width="20" height="18" rx="3"/>
+      <path d="M10 8l6 4-6 4V8z"/>
+    </svg>
+    <p>Reels Preview</p>
+  </div>
+</div>
+
+<!-- RESULT SECTION -->
+<div class="result-section" style="display:none" id="resultSection">
+  <div class="loading" id="loading" style="display:none">
+    <div class="spinner"></div>
+    <p>Fetching your content...</p>
+  </div>
+  <div class="error-msg" id="errorMsg"></div>
+  <div id="results"></div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+  <!-- HOW TO -->
+  <h2 class="section-title">How to Download from Instagram?</h2>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <h3>Copy the URL</h3>
+      <p>Open Instagram, find your video/reel/photo and copy the post link.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <h3>Paste the Link</h3>
+      <p>Come back here, paste the link into the box above and click Download.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <h3>Save to Device</h3>
+      <p>Pick your preferred quality and save the file directly to your device.</p>
+    </div>
+  </div>
+
+  <!-- AD MIDDLE -->
+  <div style="margin: 0 0 2.5rem;">
+    <ins class="adsbygoogle ad-slot tall"
+      style="display:block"
+      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="XXXXXXXXXX"
+      data-ad-format="rectangle"
+      data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FEATURES -->
+  <h2 class="section-title">Why Choose One Tap Downloader?</h2>
+  <div class="features-grid">
+    <div class="feat-card">
+      <div class="feat-icon">⚡</div>
+      <h3>Lightning Fast</h3>
+      <p>High-speed servers for instant downloads every time.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔒</div>
+      <h3>100% Private</h3>
+      <p>No login, no tracking. Your links are never stored.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">📱</div>
+      <h3>All Devices</h3>
+      <p>Works on mobile, tablet, and desktop browsers.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🎯</div>
+      <h3>HD Quality</h3>
+      <p>Download in original quality — no watermarks, no compression.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">♾️</div>
+      <h3>No Limits</h3>
+      <p>Download as many files as you want, completely free.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🎬</div>
+      <h3>All Formats</h3>
+      <p>Videos, Reels, Photos, IGTV, Carousels — all supported.</p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What is One Tap Downloader? <span class="arrow">▾</span></div>
+      <div class="faq-a">One Tap Downloader is a free browser-based tool to save public Instagram content — videos, photos, Reels, Stories, IGTV and carousels — directly to your device. No app install needed.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Do I need to create an account? <span class="arrow">▾</span></div>
+      <div class="faq-a">No. Just paste the Instagram link and hit Download. No registration, no Instagram login, and no personal data is collected.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What formats are available? <span class="arrow">▾</span></div>
+      <div class="faq-a">Videos are saved as MP4 in HD quality (up to 720p). Photos are saved as JPG at the original Instagram resolution (up to 1080×1350px). No watermarks are added.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I download from private accounts? <span class="arrow">▾</span></div>
+      <div class="faq-a">No. Only public posts are accessible. We respect user privacy and cannot fetch content that isn't publicly visible.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is there a download limit? <span class="arrow">▾</span></div>
+      <div class="faq-a">None at all. Download as many files as you need — our servers have no daily caps.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Which browsers and devices are supported? <span class="arrow">▾</span></div>
+      <div class="faq-a">Any modern browser on Windows, macOS, Android, or iOS — including Chrome, Safari, Firefox, Edge, and Brave.</div>
+    </div>
+  </div>
+
+  <!-- AD BOTTOM -->
+  <div style="margin-bottom: 2rem;">
+    <ins class="adsbygoogle ad-slot"
+      style="display:block"
+      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="XXXXXXXXXX"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="#top">Home</a>
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="dmca.html">DMCA</a>
+      <a href="mailto:contact@onetapdownloader.com">Contact</a>
+    </div>
+    <p class="footer-copy">© 2024–2026 One Tap Downloader. All rights reserved. | Not affiliated with Instagram or Meta.</p>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT BANNER -->
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1E1B4B;color:#fff;padding:1rem 1.5rem;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.2)">
+  <p style="font-size:0.85rem;margin:0;flex:1;min-width:200px">
+    🍪 We use cookies to improve your experience and show relevant ads. By using this site, you agree to our
+    <a href="privacy-policy.html" style="color:#C4B5FD;text-decoration:underline">Privacy Policy</a>.
+  </p>
+  <div style="display:flex;gap:0.75rem;flex-shrink:0">
+    <button onclick="acceptCookies()" style="background:#7C3AED;color:#fff;border:none;padding:0.55rem 1.25rem;border-radius:8px;cursor:pointer;font-size:0.85rem;font-weight:600">Accept All</button>
+    <button onclick="rejectCookies()" style="background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.3);padding:0.55rem 1.25rem;border-radius:8px;cursor:pointer;font-size:0.85rem">Reject</button>
+  </div>
+
+<script>
+  function clearInput() {
+    document.getElementById('urlInput').value = '';
+    document.getElementById('results').innerHTML = '';
+    document.getElementById('errorMsg').style.display = 'none';
+    document.getElementById('resultSection').style.display = 'none';
+    document.getElementById('reelPlaceholder').style.display = 'block';
+  }
+
+  function toggleFaq(el) {
+    el.parentElement.classList.toggle('open');
+  }
+
+  function showError(msg) {
+    var e = document.getElementById('errorMsg');
+    e.textContent = msg;
+    e.style.display = 'block';
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('resultSection').style.display = 'block';
+    document.getElementById('reelPlaceholder').style.display = 'none';
+  }
+
+  var API_KEY  = '7064e7c400msh734ad9811592422p11520ajsn9c2f190287a1';
+  var API_HOST = 'instagram-downloader-download-instagram-stories-videos4.p.rapidapi.com';
+
+  async function startDownload() {
+    var url = document.getElementById('urlInput').value.trim();
+    if (!url) { showError('Please paste an Instagram link first.'); return; }
+    if (url.indexOf('instagram.com') === -1) { showError('Please enter a valid Instagram URL.'); return; }
+
+    document.getElementById('errorMsg').style.display = 'none';
+    document.getElementById('results').innerHTML = '';
+    document.getElementById('reelPlaceholder').style.display = 'none';
+    document.getElementById('resultSection').style.display = 'block';
+    document.getElementById('loading').style.display = 'block';
+
+    try {
+      var apiUrl = 'https://' + API_HOST + '/convert?url=' + encodeURIComponent(url);
+      var res = await fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-rapidapi-key': API_KEY,
+          'x-rapidapi-host': API_HOST
+        }
+      });
+      if (!res.ok) throw new Error('API error: ' + res.status);
+      var data = await res.json();
+      document.getElementById('loading').style.display = 'none';
+      renderResults(data);
+    } catch (err) {
+      showError('Could not fetch. Make sure the post is public. (' + err.message + ')');
+    }
+  }
+
+  function renderResults(data) {
+    var results = document.getElementById('results');
+    var items = [];
+
+    if (Array.isArray(data)) {
+      items = data;
+    } else if (data.media && Array.isArray(data.media)) {
+      items = data.media;
+    } else if (data.result && Array.isArray(data.result)) {
+      items = data.result;
+    } else if (data.data && Array.isArray(data.data)) {
+      items = data.data;
+    } else {
+      var u = data.url || data.video_url || data.download_url || '';
+      var t = data.thumb || data.thumbnail || data.thumbnail_url || '';
+      if (u) items = [{url: u, thumb: t}];
+    }
+
+    if (!items.length) {
+      showError('Download link nahi mila. Response: ' + JSON.stringify(data).substring(0, 200));
+      return;
+    }
+
+    var html = '';
+    for (var i = 0; i < items.length; i++) {
+      var item    = items[i];
+      var fileUrl = item.url || item.video_url || item.download_url || '';
+      var thumb   = item.thumb || item.thumbnail || item.thumbnail_url || '';
+      var isVid   = item.type === 'video'
+                    || fileUrl.indexOf('.mp4') !== -1
+                    || (fileUrl.indexOf('.jpg') === -1 && fileUrl.indexOf('.jpeg') === -1 && fileUrl.indexOf('.png') === -1);
+      var label   = isVid ? 'Video' : 'Photo';
+      var ext     = isVid ? 'mp4' : 'jpg';
+      var fname   = 'onetap_' + (i + 1) + '.' + ext;
+
+      html += '<div class="reel-card">';
+      html += '<div class="reel-preview">';
+      if (isVid && fileUrl) {
+        html += '<video src="' + fileUrl + '" poster="' + thumb + '" controls playsinline preload="metadata"></video>';
+      } else if (thumb) {
+        html += '<img src="' + thumb + '" alt="Preview">';
+      } else {
+        html += '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#aaa;font-size:.85rem">Preview unavailable</div>';
+      }
+      html += '</div>';
+      html += '<div class="reel-info">';
+      html += '<div class="reel-info-text"><h3>Instagram ' + label + (items.length > 1 ? ' ' + (i + 1) : '') + '</h3>';
+      html += '<p>HD Quality &middot; ' + ext.toUpperCase() + ' &middot; No watermark</p></div>';
+      html += '<button class="btn-dl" onclick="window.open(\'' + fileUrl + '\', \'_blank\')">&#11015; Download</button>';
+      html += '</div>';
+      html += '<p style="font-size:0.75rem;color:#9CA3AF;text-align:center;padding:0 1rem 0.75rem">Video new tab mein khulega &rarr; 3 dots &rarr; Save/Download</p>';
+      html += '<div class="dl-progress" id="dlprog' + i + '" style="display:none;text-align:center;padding:.5rem;font-size:.8rem;color:#7C3AED">Downloading...</div>';
+      html += '</div>';
+
+      // Store url+fname for each item
+      // url stored in anchor href directly
+    }
+    results.innerHTML = html;
+  }
+
+  function doDownload(btn, idx) {
+    var info = window['_dl' + idx];
+    if (!info || !info.url) return;
+
+    // Method 1: Create anchor with download attribute and click it
+    var a = document.createElement('a');
+    a.href = info.url;
+    a.download = info.fname;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    // Show saved feedback
+    btn.innerHTML = '&#10003; Saved!';
+    btn.style.background = '#7C3AED';
+    setTimeout(function() {
+      btn.innerHTML = '&#11015; Download';
+      btn.style.background = '';
+    }, 3000);
+  }
+
+  // Nav tabs
+  document.querySelectorAll('.nav-tab').forEach(function(tab) {
+    tab.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelectorAll('.nav-tab').forEach(function(t) { t.classList.remove('active'); });
+      this.classList.add('active');
+    });
+  });
+
+  // Cookie consent
+  function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    document.getElementById('cookieBanner').style.display = 'none';
+    loadGA();
+  }
+  function rejectCookies() {
+    localStorage.setItem('cookieConsent', 'rejected');
+    document.getElementById('cookieBanner').style.display = 'none';
+  }
+  function loadGA() {
+    var s = document.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+    s.async = true;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  }
+  window.addEventListener('DOMContentLoaded', function() {
+    var c = localStorage.getItem('cookieConsent');
+    if (!c) {
+      document.getElementById('cookieBanner').style.display = 'flex';
+    } else if (c === 'accepted') {
+      loadGA();
+    }
+  });
+</script>
+</body>
+</html>
